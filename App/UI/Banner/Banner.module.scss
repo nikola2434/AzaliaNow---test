@@ -1,0 +1,37 @@
+@import "../../../styles/constants.module.scss";
+.banner {
+  height: 140px;
+  width: 332px;
+  margin-bottom: 10px;
+
+  .banner_img_light {
+    float: right;
+  }
+  .banner_img_dark {
+    float: left;
+    object-fit: cover;
+    width: 175px;
+  }
+
+  .content_banner {
+    height: 140px;
+    padding-top: 24px;
+    box-sizing: border-box;
+  }
+  .content_banner_light {
+    background-color: $color_grey;
+    color: rgba(46, 46, 51, 1);
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 19px;
+  }
+  .content_banner_dark {
+    background-color: $color_asphalt;
+    color: rgba(255, 255, 255, 1);
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 200px;
+  }
+}

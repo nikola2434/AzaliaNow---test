@@ -1,6 +1,10 @@
 import { FC } from "react";
-import style from "./Home.module.scss";
+import Sidebar from "./SIdebar/Sidebar";
 
 export const Home: FC = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <Sidebar />
+    </>
+  );
 };

@@ -1,0 +1,17 @@
+.sidebar {
+  width: 322px;
+  > div:last-child {
+    margin-top: 34px;
+  }
+  > div:first-child {
+    margin-bottom: 20px;
+  }
+
+  .content_light {
+    display: flex;
+    flex-wrap: wrap;
+    > div:first-child {
+      margin-right: 10px;
+    }
+  }
+}

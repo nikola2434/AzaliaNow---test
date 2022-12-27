@@ -1,0 +1,44 @@
+@import "../../../styles/constants.module.scss";
+.arrow {
+  position: relative;
+  width: 40px;
+  height: 16px;
+  cursor: pointer;
+  &:hover > div::after,
+  &:hover > div::before,
+  &:hover > div {
+    background-color: $color_black;
+    transition: all 0.3s linear;
+  }
+  > div {
+    position: absolute;
+    top: 7px;
+    width: 39px;
+    height: 2px;
+    background-color: $color_moderate_green;
+    display: block;
+    border-radius: 1px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 2px;
+      top: -4px;
+      right: -2px;
+      background-color: $color_moderate_green;
+      transform: rotate(45deg);
+      border-radius: 1px 0px 0px 1px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 2px;
+      top: 4px;
+      right: -2px;
+      background-color: $color_moderate_green;
+      transform: rotate(-45deg);
+      border-radius: 1px 0px 0px 1px;
+    }
+  }
+}
