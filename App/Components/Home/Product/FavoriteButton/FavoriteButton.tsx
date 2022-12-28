@@ -1,8 +1,8 @@
 import { FC } from "react";
 import style from "./FavoriteButton.module.scss";
-import { default as LeftSide } from "../../../../../public/Ellipse 8.svg";
-import RightSide from "../../../../../public/Ellipse 11.svg";
-import MiddleSide from "../../../../../public/Ellipse 10.svg";
+import { ReactComponent as LeftSide } from "../../../../../public/Ellipse 8.svg";
+import { ReactComponent as RightSide } from "../../../../../public/Ellipse 11.svg";
+import { ReactComponent as MiddleSide } from "../../../../../public/Ellipse 10.svg";
 import cn from "classnames";
 
 interface IFavoriteButtonProps {
@@ -25,7 +25,9 @@ const FavoriteButton: FC<IFavoriteButtonProps> = ({
       <MiddleSide
         className={cn(style.middle, { [style.active_middle]: isFavorites })}
       />
-      <RightSide className={cn(style.right, { [style.active_right]: isFavorites })} />
+      <RightSide
+        className={cn(style.right, { [style.active_right]: isFavorites })}
+      />
     </button>
   );
 };

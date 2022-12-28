@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { IRating } from "../../../../../config/Types";
 import style from "./RatingProduct.module.scss";
-import Star from "../../../../../public/Vector.svg";
+import { ReactComponent as Star } from "../../../../../public/Vector.svg";
 import ReviewsProduct from "./ReviewsProduct/ReviewsProduct";
 
 interface IRatingProductProps {
