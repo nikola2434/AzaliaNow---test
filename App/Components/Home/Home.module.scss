@@ -1,0 +1,30 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  > div:first-child {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 880px) {
+  .home {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .home {
+    > div:first-child {
+      margin-right: 0px;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .home {
+    > div:first-child {
+      display: none;
+    }
+  }
+}

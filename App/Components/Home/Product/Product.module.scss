@@ -1,0 +1,28 @@
+@import "../../../../styles/constants.module.scss";
+.product {
+  width: 332px;
+  min-width: 332px;
+  height: 462px;
+  padding: 30px;
+  box-sizing: border-box;
+  border: $color_grey solid 1px;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  transition: all 0.3s linear;
+  &:hover {
+    border: $color_asphalt solid 1px;
+  }
+  .rating {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .product {
+    margin-right: 0px;
+  }
+}

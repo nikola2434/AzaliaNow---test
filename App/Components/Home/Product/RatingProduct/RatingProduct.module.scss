@@ -1,0 +1,14 @@
+.rating {
+    display: flex;
+    align-items: center;
+  .list_star {
+    .star_orange {
+      fill: #f26a61;
+      margin-left: 4px;
+    }
+    .star_grey {
+      fill: #e9e9eb;
+      margin-left: 4px;
+    }
+  }
+}

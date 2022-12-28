@@ -1,0 +1,48 @@
+@import "../../../../../styles/constants.module.scss";
+.favorites {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $color_grey;
+  border-radius: 100%;
+  right: 24px;
+  bottom: 30px;
+  position: absolute;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  .left {
+    stroke: #999999;
+    fill: transparent;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+  .active_left {
+    transition: all 0.3s linear;
+    stroke: red;
+  }
+  .middle {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    stroke: #999999;
+  }
+  .active_middle {
+    transition: all 0.3s linear;
+    stroke: red;
+  }
+  .right {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    fill: #999999;
+  }
+  .active_right {
+    transition: all 0.3s linear;
+    fill: red;
+  }
+}
+.active {
+  border: red 1px solid;
+  transition: all 0.3s linear;
+}

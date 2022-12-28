@@ -4,8 +4,8 @@ import { Banner } from "../../../UI/Banner/Banner";
 import { Discount } from "../../../UI/Discount/Discount";
 import { Heading } from "../../../UI/Heading/Heading";
 import style from "./Sidebar.module.scss";
-import darkImg from "../../../../public/image 55.jpg";
-import lightImg from "../../../../public/image 60.jpg";
+import darkImg from "../../../../public/image 55.png";
+import lightImg from "../../../../public/image 60.png";
 
 const Sidebar: FC = () => {
   return (

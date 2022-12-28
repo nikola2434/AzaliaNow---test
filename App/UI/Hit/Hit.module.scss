@@ -1,0 +1,29 @@
+@import "../../../styles/constants.module.scss";
+.hit {
+  position: absolute;
+  background-color: $color_red;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  width: 65px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(-35deg);
+  overflow: hidden;
+  > div {
+    height: 25px;
+    width: 30px;
+    background-color: #d9362b;
+    z-index: 1;
+    transform: skew(35deg);
+    position: absolute;
+    top: 0px;
+    right: -21px;
+  }
+
+  > span {
+    transform: skew(35deg);
+  }
+}

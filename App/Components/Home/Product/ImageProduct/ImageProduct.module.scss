@@ -1,0 +1,14 @@
+.image {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .hit {
+    position: absolute;
+    top: 0px;
+    right: 81px;
+  }
+  .img {
+    object-fit: contain
+  }
+}
